@@ -9,6 +9,6 @@ CLIENT_SECRET = '44ef46e579df499c8a155933264a04fb'
 auth_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
-# Prueba: buscar a Bad Bunny
+# Prueba: buscar a Bad Bunny, imprimir si se encuentra
 resultado = sp.search(q='Bad Bunny', type='artist', limit=1)
 print(resultado['artists']['items'][0]['name'])
