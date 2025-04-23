@@ -12,3 +12,4 @@ sp = spotipy.Spotify(auth_manager=auth_manager)
 # Prueba: buscar a Bad Bunny, imprimir si se encuentra
 resultado = sp.search(q='Bad Bunny', type='artist', limit=1)
 print(resultado['artists']['items'][0]['name'])
+# Imprime
